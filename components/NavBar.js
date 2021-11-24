@@ -10,7 +10,7 @@ import discord from "../public/discord.png";
 export default function NavBar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{backgroundColor:"#00000091 !important"}}>
       <Container>
         <Navbar.Brand href="#home">
           <Image src={logo} responsive></Image>
@@ -18,10 +18,10 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link className="fs-4 me-1" href="#Home">Home</Nav.Link>
-            <Nav.Link className="fs-4 me-1" href="#Theme">Theme</Nav.Link>
-            <Nav.Link className="fs-4 me-1" href="#Schedule">Schedule</Nav.Link>
-            <Nav.Link className="fs-4" href="#Sponsor">Sponsor</Nav.Link>
+            <Nav.Link className="fs-4 me-1 navLinks" href="#Home">Home</Nav.Link>
+            <Nav.Link className="fs-4 me-1 navLinks" href="#Theme">Theme</Nav.Link>
+            <Nav.Link className="fs-4 me-1 navLinks" href="#Schedule">Schedule</Nav.Link>
+            <Nav.Link className="fs-4 navLinks" href="#Sponsor">Sponsor</Nav.Link>
           </Nav>
           <Nav>
             <div className="d-flex flex-row">

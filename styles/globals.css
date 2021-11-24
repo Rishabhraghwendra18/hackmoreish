@@ -3,8 +3,12 @@
   padding:0;
   color: white;
 }
-a{
+.navLinks{
   text-decoration: none;
+  color: white !important;
+}
+.navLinks:hover{
+  color:purple !important;
 }
 body {
   background-image: url("../public/background-image.png");
