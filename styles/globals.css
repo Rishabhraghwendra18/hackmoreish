@@ -1,0 +1,13 @@
+*{
+  margin:0;
+  padding:0;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+body {
+  background-image: url("../public/background-image.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
