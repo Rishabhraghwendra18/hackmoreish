@@ -20,6 +20,7 @@ export default function NavBar() {
           <Nav className="mx-auto">
             <Nav.Link className="fs-4 me-1 navLinks" href="#Home">Home</Nav.Link>
             <Nav.Link className="fs-4 me-1 navLinks" href="#Theme">Theme</Nav.Link>
+            <Nav.Link className="fs-4 me-1 navLinks" href="#Prize">Prize</Nav.Link>
             <Nav.Link className="fs-4 me-1 navLinks" href="#Schedule">Schedule</Nav.Link>
             <Nav.Link className="fs-4 navLinks" href="#Sponsor">Sponsor</Nav.Link>
           </Nav>
