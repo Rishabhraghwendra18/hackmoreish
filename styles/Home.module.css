@@ -1,0 +1,28 @@
+.title_HackMoreish {
+  line-height: 10vw !important;
+  font-size: 14vw;
+}
+.two_vw_font_size {
+  font-size: 2vw;
+}
+.Joining_Buttons_Div {
+  width: 100%;
+}
+@media only screen and (max-width: 780px) {
+  .Joining_Buttons_Div {
+    flex-direction: column !important;
+  }
+  .Joining_Links{
+      margin: 2vw 0 !important;
+  }
+}
+.Joining_Links {
+  background-color: #480248;
+  border-radius: 10px;
+  box-shadow: 5px 8px #4700ff;
+  border: none !important;
+  margin: 0 8vw;
+}
+.Joining_Links:hover {
+  background-color: #a50fa5;
+}
