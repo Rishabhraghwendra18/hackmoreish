@@ -1,0 +1,28 @@
+.Card {
+  display: block; 
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 230px;
+  height:350px;
+  line-height: 1.42857143;
+  background-color:rgb(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(101, 7, 163, 0.16),0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+  transition: box-shadow .25s; 
+}
+.Card:hover {
+  box-shadow: 0 8px 17px 0 rgba(204, 193, 216, 0.2),0 6px 20px 0 rgba(179, 176, 176, 0.19);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+Card.Body {
+    padding-left: 10px;
+    padding: auto;
+
+  }
+  Card.Title {
+    margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+  }
+  
+
