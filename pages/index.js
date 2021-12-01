@@ -1,12 +1,17 @@
 import styles from '../styles/Home.module.css'
-import NavBar from '../components/NavBar'
-import Prizes from '../sections/Prizes/index.js'
+import Hero from '../sections/Hero'
+import Prizes from '../sections/Prizes/index'
+import Theme from '../sections/Theme/index'
+
 
 export default function Home() {
   return (
+    <>
     <div className={styles.container}>
-      <NavBar></NavBar>
+      <Hero></Hero>
       <Prizes></Prizes>
-       </div>
+      <Theme></Theme>
+    </div>
+    </>
   )
 }
