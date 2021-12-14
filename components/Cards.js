@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card } from "react-bootstrap";
 
-export default function Cards({title,url,width,height,description}) {
+export default function Cards({title,url,width,height,alt,description}) {
   return (
     <Card className="card col-xs-12 col-sm-4">
       <Image
@@ -9,6 +9,7 @@ export default function Cards({title,url,width,height,description}) {
         src={url}
         width={width}
         height={height}
+        alt={alt}
         className="img-card"
       />
       <Card.Body className="card-content">
