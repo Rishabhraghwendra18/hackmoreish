@@ -12,7 +12,7 @@ export default function NavBar() {
     <Navbar className="position-fixed top-0 w-100 nav_bar" collapseOnSelect expand="lg" bg="dark" variant="dark" style={{backgroundColor:"#00000091 !important"}}>
       <Container>
         <Navbar.Brand href="#home">
-          <Image src={logo} width={70} height={70}></Image>
+          <Image src={logo} width={70} height={70} alt="Hackmoreish logo"></Image>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -28,19 +28,19 @@ export default function NavBar() {
             <div className="d-flex flex-row">
             <Nav.Link className="me-1" href="#deets">
               {" "}
-              <Image src={facebook} responsive></Image>
+              <Image src={facebook} alt="facebook logo" responsive></Image>
             </Nav.Link>
             <Nav.Link className="me-1" href="#deets">
               {" "}
-              <Image src={instagram} responsive></Image>
+              <Image src={instagram} alt="instagram logo" responsive></Image>
             </Nav.Link>
             <Nav.Link className="me-1" href="#deets">
               {" "}
-              <Image src={twitter} responsive></Image>
+              <Image src={twitter} alt="twitter logo" responsive></Image>
             </Nav.Link>
             <Nav.Link href="#deets">
               {" "}
-              <Image src={discord} responsive></Image>
+              <Image src={discord} alt="discord logo" responsive></Image>
             </Nav.Link>
             </div>
           </Nav>
