@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { Card } from "react-bootstrap";
 
-export default function Cards({key,title,url,width,height,alt,description}) {
+export default function Cards({title,url,width,height,alt,description}) {
   return (
     <Card className="card col-xs-12 col-sm-4 ">
       <div className="d-flex justify-content-center">
             <Image
             variant="top"
-            key={key}
             src={url}
             width={width}
             height={height}
