@@ -18,11 +18,11 @@ Card.Body {
     padding-left: 10px;
     padding: auto;
 
-  }
-  Card.Title {
-    margin-top:0px;
+}
+Card.Title {
+  margin-top:0px;
   font-weight: 700;
   font-size: 1.65em;
-  }
+}
   
 

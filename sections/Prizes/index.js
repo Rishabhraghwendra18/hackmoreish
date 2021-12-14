@@ -1,20 +1,19 @@
-import React from 'react'
-import Image from 'next/image'
-import prize1 from '../../public/prize1.png'
-import prize2 from '../../public/prize2.png'
-import prize3 from '../../public/prize3.png'
-import prize4 from '../../public/prize4.png'
-import { Card } from 'react-bootstrap'
-import styles from '../../styles/Prize.module.css'
+import Cards from "../../components/Cards";
 
-
-
-export default function Prize(){
-    return (
- <div className="d-flex justify-content-center flex-row">
-        
-</div>
-
-    )
+export default function Prize({ prizes }) {
+  return (
+    <div className="d-flex justify-content-center flex-wrap">
+      {prizes.map((e) => (
+        <Cards
+          key={e.icon.title}
+          title={e.title}
+          url={e.icon.url}
+          width={200}
+          height={200}
+          alt={e.icon.description}
+          description={e.description}
+        />
+      ))}
+    </div>
+  );
 }
-
