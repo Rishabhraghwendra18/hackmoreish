@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css'
 import Hero from '../sections/Hero'
 import Prizes from '../sections/Prizes/index'
 import Theme from '../sections/Theme/index'
-
+import About from '../sections/About/index'
 
 export async function getStaticProps() {
   const query = `{
@@ -54,6 +54,7 @@ export default function Home({ content, prizes }) {
     <>
       <div className={styles.container}>
         <Hero></Hero>
+        <About></About>
         <Prizes prizes={prizes}></Prizes>
         <Theme content={content}></Theme>
       </div>
