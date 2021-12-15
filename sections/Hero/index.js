@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from '../../styles/Home.module.css';
 import discordLogo from '../../public/discord-logo-for-apply.png'
 import devfolioLogo from '../../public/devfolio.svg'
@@ -23,10 +24,12 @@ export default function Hero(){
                               <Image src={devfolioLogo} width={32} height={32} className="mx-auto"/>
                               <span className="ms-1">Apply with Devfolio</span>
                         </div>
+                        <a href={"https://discord.gg/ncvVmHSV"} target={"_blank"} style={{textDecoration: "none"}}>
                         <div className={`border border-1 d-flex flex-row justify-content-center align-items-center ${styles.Joining_Links} p-3`}>
                               <Image src={discordLogo} width={32} height={32} className="mx-auto"/>
                               <span className="ms-1">Join Discord Server</span>
                         </div>
+                        </a>
                   </div>
             </div>
       )

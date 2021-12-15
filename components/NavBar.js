@@ -26,19 +26,19 @@ export default function NavBar() {
           </Nav>
           <Nav>
             <div className="d-flex flex-row">
-            <Nav.Link className="me-1" href="#deets">
+            <Nav.Link className="me-1" href="https://www.facebook.com/profile.php?id=100074956186696" target={"_blank"}>
               {" "}
               <Image src={facebook} alt="facebook logo" responsive></Image>
             </Nav.Link>
-            <Nav.Link className="me-1" href="#deets">
+            <Nav.Link className="me-1" href="https://instagram.com/hackmoreish?utm_medium=copy_link" target={"_blank"}>
               {" "}
               <Image src={instagram} alt="instagram logo" responsive></Image>
             </Nav.Link>
-            <Nav.Link className="me-1" href="#deets">
+            <Nav.Link className="me-1" href=" https://twitter.com/HackMoreish?t=HPo06xXtMNosPUf1ltngAA&s=08" target={"_blank"}>
               {" "}
               <Image src={twitter} alt="twitter logo" responsive></Image>
             </Nav.Link>
-            <Nav.Link href="#deets">
+            <Nav.Link href="https://discord.gg/ncvVmHSV" target={"_blank"}>
               {" "}
               <Image src={discord} alt="discord logo" responsive></Image>
             </Nav.Link>
