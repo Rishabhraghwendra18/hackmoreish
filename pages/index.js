@@ -3,8 +3,9 @@ import Hero from '../sections/Hero'
 import Prizes from '../sections/Prizes/index'
 import Theme from '../sections/Theme/index'
 
+
 export async function getStaticProps() {
-  const query=`{
+  const query = `{
     nameCollection{
       items{
         title
@@ -30,32 +31,32 @@ export async function getStaticProps() {
       }
     }
   }`;
-  const response=await fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.SPACE_ID}/environments/master`,{
-    method:"POST",
-    headers:{
-      "Content-Type":"application/json",
-      Authorization:`Bearer ${process.env.ACCESS_TOKEN}`,
+  const response = await fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.SPACE_ID}/environments/master`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
     },
-    body:JSON.stringify({query})
+    body: JSON.stringify({ query })
   }
   )
-  .then(res=>res.json());
+    .then(res => res.json());
   return {
-    props:{
-      content:response.data.nameCollection.items,
-      prizes:response.data.prizesCollection.items
+    props: {
+      content: response.data.nameCollection.items,
+      prizes: response.data.prizesCollection.items
     }
   };
 }
 
-export default function Home({content,prizes}) {
+export default function Home({ content, prizes }) {
   return (
     <>
-    <div className={styles.container}>
-      <Hero></Hero>
-      <Prizes prizes={prizes}></Prizes>
-      <Theme content={content}></Theme>
-    </div>
+      <div className={styles.container}>
+        <Hero></Hero>
+        <Prizes prizes={prizes}></Prizes>
+        <Theme content={content}></Theme>
+      </div>
     </>
   )
 }
