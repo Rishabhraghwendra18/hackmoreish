@@ -1,4 +1,3 @@
-
 .box{
     display: flex;
     flex: right;
@@ -6,66 +5,35 @@
     height: 100vh;
     padding-top: 100px ;
     padding: 120px 50px 0px;
-    
 }
-
 .heading{
-    font-size: 4vw;
     display: flex;
-    padding-top: 10px;
-    width: 100%;
-    height: 520px;
+    width: fit-content;
+    height: fit-content;
+    padding: 3vw;
     background-color: #480248;
-    box-shadow: 10px 10px #4700ff;
+    box-shadow: 1vw 2vh #4700ff;
     border-radius: 20px;
-    position: relative;
-    animation-name: opening;
-    animation-duration: 1s;
-}
-@keyframes opening{
-    0% {top:200px}
-    100% {top:0px}
 }
 .title_HackMoreish {
-    padding-top: 70px;
-    padding-left: 80px;
-    padding-right: 20px;
+    padding-left: 2vw;
     line-height: 10vw !important;
     font-size: 10vw;
-    
-  }
+}
 .heading2{
     padding-bottom: 20px;
     padding-left: 20px;
     align-items: center;
     
 }
-
-.contents{
-    padding-right: 20px;
-    font-size: 2vw;
-    align-content: center;
+.content{
+    padding-left: 2vw;
 }
-
-@media only screen and (max-width: 780px){
+@media (max-width:1770px){
     .heading{
         flex-direction: column;
-        height: min-content;
-        font-size: 6vw;
-    }
-    .title_HackMoreish{
-        padding: 10px 10px;
     }
     .box{
-        padding: 100px 45px 0px;
+        margin-bottom: 15vh;
     }
-    .contents{
-        font-size: 3vw;
-    }
-
-}
-
-.quote{
-    opacity: 50%;
-    font-style: italic;
 }
