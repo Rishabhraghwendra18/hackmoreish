@@ -2,23 +2,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
- step 1: Fork the repo
+ Step 1: Fork the repo
 
- step 2: Clone the repo
+ Step 2: Clone the repo
 ```
 git clone github.com/<your-username>/hackmoreish
 ```
 
-step 3:Go to the cloned folder
+Step 3: Go to the cloned folder
 ```
 cd Hackmoriesh
 ```
 
-step 4:Install dependencies
+Step 4: Install dependencies
 ```
 npm install
 ```
-Then, run the development server:
+Step 5: Then, run the development server:
 
 ```bash
 npm run dev
