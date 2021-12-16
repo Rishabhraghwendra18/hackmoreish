@@ -1,8 +1,10 @@
 import Cards from "../../components/Cards";
+import Div from "../../components/Div";
 
 export default function Prize({ prizes }) {
   return (
-    <div className="d-flex justify-content-center flex-wrap">
+    <Div title={"Prizes"}>
+    <div className="d-flex justify-content-center flex-wrap mt-1">
       {prizes.map((e) => (
         <Cards
           key={e.icon.title}
@@ -15,5 +17,6 @@ export default function Prize({ prizes }) {
         />
       ))}
     </div>
+    </Div>
   );
 }

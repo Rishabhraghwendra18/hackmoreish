@@ -5,10 +5,11 @@
     height: 100vh;
     padding-top: 100px ;
     padding: 120px 50px 0px;
+    height: fit-content !important;
 }
 .heading{
     display: flex;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     padding: 3vw;
     background-color: #480248;
@@ -34,6 +35,6 @@
         flex-direction: column;
     }
     .box{
-        margin-bottom: 15vh;
+        margin-bottom: 15vw;
     }
 }
