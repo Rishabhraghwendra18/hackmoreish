@@ -14,8 +14,14 @@
   }
   .Joining_Links{
       margin: 2vw 0 !important;
+    }
+    .vh_media{
+      height: 115vh!important;
+    }
+    .two_vw_font_size {
+      font-size: 4vw;
+    }
   }
-}
 .Joining_Links {
   background-color: #480248;
   border-radius: 10px;
