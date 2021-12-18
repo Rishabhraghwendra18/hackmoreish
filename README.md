@@ -2,7 +2,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+ Step 1: Fork the repo
+
+ Step 2: Clone the repo
+```
+git clone github.com/<your-username>/hackmoreish
+```
+
+Step 3: Go to the cloned folder
+```
+cd Hackmoriesh
+```
+
+Step 4: Install dependencies
+```
+npm install
+```
+Step 5: Then, run the development server:
 
 ```bash
 npm run dev
@@ -11,6 +27,11 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+**NOTE**: To resolve errors in npm run dev:-
+
+Please comment the whole function get static props and prizes and theme component in home function in the pages/index.js file.
+**While making the PR please uncomment the commented line and then make the PR**.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
