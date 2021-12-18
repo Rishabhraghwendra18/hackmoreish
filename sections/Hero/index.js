@@ -9,7 +9,7 @@ export default function Hero() {
       return (
 
 
-            <div className="d-flex flex-column justify-content-center align-items-center vh-100">
+            <div className={`d-flex flex-column justify-content-center align-items-center vh-100 ${styles.vh_media}`}>
                   <div className="border-start border-5 rounded ps-2">
                         <div className={styles.two_vw_font_size}>
                               HACKATHON 2022
