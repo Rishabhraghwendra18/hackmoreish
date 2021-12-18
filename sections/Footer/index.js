@@ -25,13 +25,13 @@ export default function Footer() {
       <h5 className={styles.widget_title}>Quick Links</h5>
       <ul >
       <li>
-      <div ><a href="#.">About</a>  <a href="#.">    Theme</a></div>		
+      <div ><a href="#About">About</a>  <a href="#Theme">    Theme</a></div>		
       </li>
       <li>
-      <div><a href="#.">Prizes</a><a href="#.">  Schedule</a></div>	
+      <div><a href="#Prizes">Prizes</a><a href="#Schedule">  Schedule</a></div>	
       </li>
       <li>
-      <div><a href="#.">Sponsors</a><a href="#.">  FAQs</a></div>	
+      <div><a href="#Sponsors">Sponsors</a><a href="#FAQs">  FAQs</a></div>	
       </li>
       
       </ul>
@@ -43,9 +43,9 @@ export default function Footer() {
             <div className="col-xs-12 col-sm-6 col-md-3">
       <div className={styles.widget}>
       <h5 className={styles.widget_title}>Follow us on:</h5>
-                  <i className="fab fa-facebook fa-lg" style={{padding: "7px;"}}> </i> 
-                   <i className="fab fa-twitter fa-lg" style={{padding: "7px;"}}> </i> 
-                  <i className="fab fa-instagram fa-lg" style={{padding: "7px;"}}> </i> 
+                  <a href="https://www.facebook.com/profile.php?id=100074956186696"><i className="fab fa-facebook fa-lg" style={{padding: "7px;"}}></i></a>
+                   <a href="https://twitter.com/HackMoreish?t=HPo06xXtMNosPUf1ltngAA&s=08"><i className="fab fa-twitter fa-lg" style={{padding: "7px;"}}> </i> </a>
+                  <a href="https://instagram.com/hackmoreish?utm_medium=copy_link"><i className="fab fa-instagram fa-lg" style={{padding: "7px;"}}> </i> </a>
                   {/* <i className="fab fa-discord fa-lg" style={{padding: "5px;"}}> </i>  */}
       </div>
       </div>

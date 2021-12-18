@@ -3,7 +3,9 @@
 /* Main Footer */
 .footer .main_footer{	padding: 20px 0;	background: #480248;}
 .footer ul{	padding-left: 0;	list-style: none;}
-
+.a{
+    text-decoration: none;
+}
 
 .widget{	padding: 20px;	margin-bottom: 40px; padding: 0;	background-color: transparent;	margin-bottom: 40px;
 	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
