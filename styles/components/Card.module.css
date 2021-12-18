@@ -2,3 +2,8 @@
   background-color: rgb(108 58 106) !important;
   padding: 3vw !important;
 }
+@media (max-width:608px){
+  .Card{
+      margin-left: 0px !important;
+  }
+}

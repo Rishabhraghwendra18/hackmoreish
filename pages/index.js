@@ -3,6 +3,8 @@ import Hero from '../sections/Hero'
 import Prizes from '../sections/Prizes/index'
 import Theme from '../sections/Theme/index'
 import About from '../sections/About/index'
+import Sponsors from '../sections/Sponsors'
+import Schedule from '../sections/Schedule'
 
 export async function getStaticProps() {
   const query = `{
@@ -57,6 +59,8 @@ export default function Home({ content, prizes }) {
         <About></About>
         <Prizes prizes={prizes}></Prizes>
         <Theme content={content}></Theme>
+        <Sponsors></Sponsors>
+        <Schedule></Schedule>
       </div>
     </>
   )
