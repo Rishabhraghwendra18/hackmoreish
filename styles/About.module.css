@@ -34,7 +34,4 @@
     .heading{
         flex-direction: column;
     }
-    .box{
-        margin-bottom: 15vw;
-    }
 }
