@@ -1,10 +1,11 @@
-import styles from '../styles/Home.module.css'
-import Hero from '../sections/Hero'
-import Prizes from '../sections/Prizes/index'
-import Theme from '../sections/Theme/index'
-import About from '../sections/About/index'
-import Sponsors from '../sections/Sponsors'
-import Schedule from '../sections/Schedule'
+import styles from "../styles/Home.module.css";
+import Hero from "../sections/Hero";
+import Prizes from "../sections/Prizes/index";
+import Theme from "../sections/Theme/index";
+import About from "../sections/About/index";
+import Sponsors from "../sections/Sponsors";
+import Schedule from "../sections/Schedule";
+import Faqs from "../sections/Faqs";
 
 export async function getStaticProps() {
   const query = `{
@@ -32,26 +33,34 @@ export async function getStaticProps() {
         }
       }
     }
-  }`;
-  const response = await fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.SPACE_ID}/environments/master`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
-    },
-    body: JSON.stringify({ query })
+  faQsCollection{
+    items{
+      question
+      answer
+    }
   }
-  )
-    .then(res => res.json());
+  }`;
+  const response = await fetch(
+    `https://graphql.contentful.com/content/v1/spaces/${process.env.SPACE_ID}/environments/master`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+      },
+      body: JSON.stringify({ query }),
+    }
+  ).then((res) => res.json());
   return {
     props: {
       content: response.data.nameCollection.items,
-      prizes: response.data.prizesCollection.items
-    }
+      prizes: response.data.prizesCollection.items,
+      faqs: response.data.faQsCollection.items,
+    },
   };
 }
 
-export default function Home({ content, prizes }) {
+export default function Home({ content, prizes, faqs }) {
   return (
     <>
       <div className={styles.container}>
@@ -61,7 +70,8 @@ export default function Home({ content, prizes }) {
         <Theme content={content}></Theme>
         <Schedule></Schedule>
         <Sponsors></Sponsors>
+        <Faqs faqs={faqs}></Faqs>
       </div>
     </>
-  )
+  );
 }
