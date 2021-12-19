@@ -110,12 +110,12 @@ export default function Footer() {
                   target={"_blank"}
                   className={styles.widget_title_anchortag}
                 >
-                  <i
-                    className="fa-solid fa-envelope"
+                   <i
+                    className="fa fa-envelope fa-lg"
                     style={{ padding: "7px;" }}
                   >
                     {" "}
-                  </i>{" "}
+                  </i>{" "} 
                 </a>
               </div>
             </div>
