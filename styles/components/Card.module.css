@@ -1,6 +1,7 @@
 .Card {
   background-color: rgb(108 58 106) !important;
   padding: 3vw !important;
+  min-width: 250px;
 }
 @media (max-width:608px){
   .Card{

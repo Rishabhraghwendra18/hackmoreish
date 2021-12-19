@@ -59,8 +59,8 @@ export default function Home({ content, prizes }) {
         <About></About>
         <Prizes prizes={prizes}></Prizes>
         <Theme content={content}></Theme>
-        <Sponsors></Sponsors>
         <Schedule></Schedule>
+        <Sponsors></Sponsors>
       </div>
     </>
   )
