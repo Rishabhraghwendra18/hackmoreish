@@ -10,7 +10,7 @@ export default function Faqs({ faqs }) {
           <div className="contents">
             <Accordion>
               <Accordion.Item eventKey={`${i}`} style={{backgroundColor:"rgb(108 58 106)"}}>
-                <Accordion.Header style={{backgroundColor:"#480248"}}>{e.question}</Accordion.Header>
+                <Accordion.Header className={`${styles.header}`}>{e.question}</Accordion.Header>
                 <Accordion.Body>{e.answer}</Accordion.Body>
               </Accordion.Item>
             </Accordion>
