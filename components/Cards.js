@@ -5,7 +5,7 @@ import styles from "../styles/components/Card.module.css";
 export default function Cards({title,url,width,height,alt,description}) {
   return (
     <Card className={`card col-xs-12 col-sm-4 ${styles.Card}`}>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center" id="image_div">
             <Image
             variant="top"
             src={url}
