@@ -23,6 +23,10 @@
   }
 
 }
+.marginHeight{
+    height: 502px;
+    margin-top: 10rem;
+}
 .Joining_Links {
   background-color: #480248;
   border-radius: 10px;
