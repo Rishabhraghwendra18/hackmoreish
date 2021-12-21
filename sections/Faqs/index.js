@@ -4,7 +4,7 @@ import styles from "../../styles/Faqs.module.css";
 
 export default function Faqs({ faqs }) {
   return (
-    <Div title={"FAQs"}>
+    <Div title={"FAQs"} section_id={"FAQs"}>
       <div className={`${styles.grid_container}`}>
         {faqs.map((e, i) => (
           <div className="contents">

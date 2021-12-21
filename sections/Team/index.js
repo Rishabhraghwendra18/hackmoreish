@@ -19,7 +19,6 @@ export default function Team(){
             <a href=""><Cards title={"Rishabh Raghwendra"} url={ansh} width={70} height={70} description={"Lead organizer"} alt={"none"} className={`${styles.image}`}></Cards></a>
             <a href=""><Cards title={"Rishabh Raghwendra"} url={ansh} width={70} height={70} description={"Lead organizer"} alt={"none"} className={`${styles.image}`}></Cards></a>
             </div>
-            
         </Div>
     );
 }
