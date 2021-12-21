@@ -2,7 +2,7 @@
     display: flex;
     flex: right;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 100px ;
     padding: 120px 50px 0px;
     height: fit-content !important;
