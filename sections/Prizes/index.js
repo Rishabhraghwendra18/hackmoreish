@@ -3,7 +3,7 @@ import Div from "../../components/Div";
 
 export default function Prize({ prizes }) {
   return (
-    <Div title={"Prizes"}>
+    <Div title={"Prizes"} section_id={"Prizes"}>
     <div className="d-flex justify-content-center flex-wrap mt-1">
       {prizes.map((e) => (
         <Cards

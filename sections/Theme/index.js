@@ -3,7 +3,7 @@ import Div from "../../components/Div";
 
 export default function Theme({content}) {
 return (
-  <Div title={"Themes"}>
+  <Div title={"Themes"} section_id={"Theme"}>
   <div className="d-flex justify-content-center flex-wrap mt-1">
     {content.map((e) => (
       <Cards

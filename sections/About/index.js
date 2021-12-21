@@ -2,7 +2,7 @@ import styles from "../../styles/About.module.css";
 
 export default function About() {
   return (
-    <div className={`${styles.box} vh-100 d-flex justify-content-center `}>
+    <div className={`${styles.box} vh-100 d-flex justify-content-center `} id="About">
       <div className={`d-flex justify-content-center ${styles.heading}`}>
         <div className="d-flex justify-content-center">
           <div className={`largerText ${styles.title_HackMoreish}`}>
