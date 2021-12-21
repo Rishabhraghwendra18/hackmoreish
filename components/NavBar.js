@@ -23,6 +23,8 @@ export default function NavBar() {
             <Nav.Link className="fs-4 me-1 navLinks" href="#Theme">Theme</Nav.Link>
             <Nav.Link className="fs-4 me-1 navLinks" href="#Schedule">Schedule</Nav.Link>
             <Nav.Link className="fs-4 navLinks" href="#Sponsor">Sponsor</Nav.Link>
+            <Nav.Link className="fs-4 navLinks" href="#FAQs">FAQs</Nav.Link>
+            <Nav.Link className="fs-4 navLinks" href="#Team">Team</Nav.Link>
           </Nav>
           <Nav>
             <div className="d-flex flex-row">
