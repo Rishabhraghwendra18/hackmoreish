@@ -1,4 +1,4 @@
-export default teams = [
+export const teams = [
 {
       id:"Rishabh",
       photo:".../",
@@ -13,3 +13,5 @@ export default teams = [
       linkedinId:"hklsad"
 }
 ];
+
+export default teams;
