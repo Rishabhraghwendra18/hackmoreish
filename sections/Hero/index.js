@@ -23,10 +23,12 @@ export default function Hero() {
                         </div>
                   </div>
                   <div className={`d-flex flex-row justify-content-center align-items-center mt-3 ${styles.Joining_Buttons_Div}`}>
+                        <a href="https://hackmoreish.devfolio.co/" target={"_blank"} style={{textDecoration: "none"}}>
                         <div className={`border border-1  d-flex flex-row justify-content-center align-items-center ${styles.Joining_Links} p-3`}>
                               <Image src={devfolioLogo} width={32} height={32} className="mx-auto" />
                               <span className="ms-1">Apply with Devfolio</span>
                         </div>
+                        </a>
                         <a href={"https://discord.gg/ncvVmHSV"} target={"_blank"} style={{textDecoration: "none"}}>
                         <div className={`border border-1 d-flex flex-row justify-content-center align-items-center ${styles.Joining_Links} p-3`}>
                               <Image src={discordLogo} width={32} height={32} className="mx-auto" />
