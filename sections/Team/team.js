@@ -24,7 +24,7 @@ export const teams = [
       id:"Paritosh",
       photoName:"Paritosh.jpeg",
       name:"Paritosh Srivastava",
-      role:"Web Development/Sponsorhsip Lead",
+      role:"Web Development/Sponsorship Lead",
       linkedinId:"https://www.linkedin.com/in/paritosh-srivastava/"
 },
 {
