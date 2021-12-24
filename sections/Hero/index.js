@@ -19,7 +19,7 @@ export default function Hero() {
                               <p style={{ color: "#4700ff" }}>Moreish</p>
                         </div>
                         <div className={styles.two_vw_font_size}>
-                              <span>Coming Soon...</span>
+                              <span>20<sup>th</sup> May 2022</span>
                         </div>
                   </div>
                   <div className={`d-flex flex-row justify-content-center align-items-center mt-3 ${styles.Joining_Buttons_Div}`}>
