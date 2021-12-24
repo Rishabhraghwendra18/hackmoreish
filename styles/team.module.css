@@ -1,3 +1,11 @@
-.image *{
-    display: none !important;
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    /* gap: 1vw; */
+}
+.profile{
+    background-color: rgb(108 58 106);
+}
+.profile #image_div{
+    border-radius: 100%;
 }

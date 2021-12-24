@@ -36,7 +36,7 @@ export default function NavBar() {
               {" "}
               <Image src={instagram} alt="instagram logo" responsive></Image>
             </Nav.Link>
-            <Nav.Link className="me-1" href=" https://twitter.com/HackMoreish?t=HPo06xXtMNosPUf1ltngAA&s=08" target={"_blank"}>
+            <Nav.Link className="me-1" href="https://twitter.com/HackMoreish?t=HPo06xXtMNosPUf1ltngAA&s=08" target={"_blank"}>
               {" "}
               <Image src={twitter} alt="twitter logo" responsive></Image>
             </Nav.Link>

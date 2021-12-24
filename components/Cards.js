@@ -2,9 +2,9 @@ import Image from "next/image";
 import { Card } from "react-bootstrap";
 import styles from "../styles/components/Card.module.css";
 
-export default function Cards({title,url,width,height,alt,description}) {
+export default function Cards({title,url,width,height,alt,description,className}) {
   return (
-    <Card className={`card col-xs-12 col-sm-4 ${styles.Card}`}>
+    <Card className={`card col-xs-12 col-sm-4 ${styles.Card} ${className?className:null}`}>
       <div className="d-flex justify-content-center" id="image_div">
             <Image
             variant="top"
