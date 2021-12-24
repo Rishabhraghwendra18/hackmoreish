@@ -72,7 +72,7 @@ export default function Home({ content, prizes, faqs }) {
         <Schedule></Schedule>
         <Sponsors></Sponsors>
         <Faqs faqs={faqs}></Faqs>
-        {/* <Team></Team> */}
+        <Team></Team>
       </div>
     </>
   );

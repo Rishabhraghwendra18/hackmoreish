@@ -1,11 +1,21 @@
 .grid_container{
     display: grid;
-    grid-template-columns: repeat(3,auto);
-    /* gap: 1vw; */
+    grid-template-columns: repeat(4,auto);
+    gap: 1vw;
+    justify-content: center;
 }
 .profile{
     background-color: rgb(108 58 106);
+    max-width: initial;
+    height: 100%;
 }
-.profile #image_div{
+.profile :global(#image_div) :global(.img-card){
     border-radius: 100%;
+}
+@media (max-width:1688px){
+    .grid_container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
