@@ -29,7 +29,7 @@ export default function Hero() {
                               <span className="ms-1">Apply with Devfolio</span>
                         </div>
                         </a>
-                        <a href={"https://discord.gg/ncvVmHSV"} target={"_blank"} style={{textDecoration: "none"}}>
+                        <a href={"https://discord.gg/PqwCqPxhkd"} target={"_blank"} style={{textDecoration: "none"}}>
                         <div className={`border border-1 d-flex flex-row justify-content-center align-items-center ${styles.Joining_Links} p-3`}>
                               <Image src={discordLogo} width={32} height={32} className="mx-auto" />
                               <span className="ms-1">Join Discord Server</span>

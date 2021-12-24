@@ -40,7 +40,7 @@ export default function NavBar() {
               {" "}
               <Image src={twitter} alt="twitter logo" responsive></Image>
             </Nav.Link>
-            <Nav.Link href="https://discord.gg/ncvVmHSV" target={"_blank"}>
+            <Nav.Link href="https://discord.gg/PqwCqPxhkd" target={"_blank"}>
               {" "}
               <Image src={discord} alt="discord logo" responsive></Image>
             </Nav.Link>
