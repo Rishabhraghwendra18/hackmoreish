@@ -28,10 +28,11 @@
     align-items: center;
     
 }
+
 .content{
     padding-left: 2vw;
 }
-@media (max-width:1770px){
+@media (max-width:1500px){
     .heading{
         flex-direction: column;
     }
