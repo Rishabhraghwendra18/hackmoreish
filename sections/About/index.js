@@ -12,13 +12,13 @@ export default function About() {
         </div>
         <div className={`${styles.content}`}>
           <h1 className="Abot">About</h1>
-          <cite className="fs-3">
+          <cite className="fs-3" style={{fontSize: "1.5vw !important"}}>
             <q>
               Hackathons are where your crazy idea becomes reality
             </q>
             ~ Alex Kern
           </cite>
-          <p className="fs-3">
+          <p className="fs-3" style={{fontSize: "1.5vw !important"}}>
             Hackmoreish 2022 is open for all hackathon where participants can use
             any technology to build their hacks. It's a great opportunity to
             showcase your unique ideas and expand your boundaries with your
