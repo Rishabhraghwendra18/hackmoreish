@@ -35,6 +35,13 @@ export const teams = [
       linkedinId:"https://www.linkedin.com/in/priyanka-sharma-533ba3221/"
 },
 {
+      id:"Anushka",
+      photoName:"Anushka.jpeg",
+      name:"Anushka Bhardwaj",
+      role:"Event Planner Team",
+      linkedinId:"https://www.linkedin.com/in/anushka-bhardwaj-357806208"
+},
+{
       id:"Anubha",
       photoName:"Anubha.jpeg",
       name:"Anubha Kumari",
