@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Div from "../../components/Div";
 import styles from "../../styles/Sponsors.module.css";
 
@@ -9,11 +8,12 @@ function SponsorDiv({ href, src, alt }) {
     </a>
   );
 }
+// Gold Sponsors = Diamond Sponsors , Silver Sponsors = Gold Sponsors
 export default function Sponsors({ goldSponsors, silverSponsors }) {
   return (
     <>
-      <Div title={"Gold Sponsors"} section_id={"Sponsors"}>
-        <div className="d-flex justify-content-center flex-wrap mt-1">
+      <Div title={"Diamond Sponsors"} section_id={"Sponsors"}>
+        <div className={`${styles.grid_container}`}>
           {goldSponsors.map((e, i) => (
             <div className="d-flex justify-content-center">
               <SponsorDiv
@@ -26,7 +26,7 @@ export default function Sponsors({ goldSponsors, silverSponsors }) {
           ))}
         </div>
       </Div>
-      <Div title={"Silver Sponsors"} section_id={"Sponsors"}>
+      <Div title={"Gold Sponsors"} section_id={"Sponsors"}>
         <div className={`${styles.grid_container}`}>
           {silverSponsors.map((e, i) => (
             <div className="d-flex justify-content-center">

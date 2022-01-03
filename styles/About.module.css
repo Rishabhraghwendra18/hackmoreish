@@ -37,3 +37,11 @@
         flex-direction: column;
     }
 }
+.fs_3{
+    font-size: 1.6vw !important;
+}
+@media (max-width: 1200px){
+.fs_3 {
+    font-size: 1.7vh !important;
+}
+}
