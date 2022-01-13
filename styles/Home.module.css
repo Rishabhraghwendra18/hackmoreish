@@ -12,24 +12,34 @@
   .Joining_Buttons_Div {
     flex-direction: column !important;
   }
-  .Joining_Links{
-      margin: 2vw 0 !important;
+  .Joining_Links {
+    margin: 2vw 0 !important;
   }
 }
 .Joining_Links {
-  background-color: #480248;
+  /* background-color: #480248;
   border-radius: 10px;
   box-shadow: 5px 8px #4700ff;
-  border: none !important;
-  margin: 0 8vw;
-}
-.Joining_Links:hover {
-  background-color: #a50fa5;
+  border: none !important; */
+  margin: 0 8vw; 
+  align-items: center;
+  background-color: #27333f;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  height: 44px;
+  justify-content: center;
+  outline: none;
+  padding: 0 32px;
+  transition: all 0.1s ease-in 0s;
+  white-space: nowrap;
+  width: 100%;
 }
 
-@media only screen
-and (max-width : 520px) {
- .two_vw_font_size{
-   font-size: 4vw;
- }
+@media only screen and (max-width: 520px) {
+  .two_vw_font_size {
+    font-size: 4vw;
+  }
 }
