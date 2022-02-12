@@ -9,7 +9,7 @@ function SponsorDiv({ href, src, alt }) {
   );
 }
 // Gold Sponsors = Associate Sponsors , Silver Sponsors = Diamond Sponsors
-export default function Sponsors({ goldSponsors, silverSponsors }) {
+export default function Sponsors({ goldSponsors, silverSponsors,level4Sponsors }) {
   return (
     <>
       <Div title={"Associate Sponsors"} section_id={"Sponsors"}>
@@ -29,6 +29,20 @@ export default function Sponsors({ goldSponsors, silverSponsors }) {
       <Div title={"Diamond Sponsors"} section_id={"Sponsors"}>
         <div className={`${styles.grid_container}`}>
           {silverSponsors.map((e, i) => (
+            <div className="d-flex justify-content-center">
+              <SponsorDiv
+                key={i}
+                href={e.sponsorWebsiteLink}
+                src={e.sponsorIcon.url}
+                alt={e.sponsorIcon.title}
+              />
+            </div>
+          ))}
+        </div>
+      </Div>
+      <Div title={"Gold Sponsors"} section_id={"Sponsors"}>
+        <div className={`${styles.grid_container}`}>
+          {level4Sponsors.map((e, i) => (
             <div className="d-flex justify-content-center">
               <SponsorDiv
                 key={i}
