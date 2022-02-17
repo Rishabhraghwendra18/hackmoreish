@@ -25,6 +25,7 @@ export default function NavBar() {
             <Nav.Link className="fs-4 navLinks" href="#Sponsors">Sponsors</Nav.Link>
             <Nav.Link className="fs-4 navLinks" href="#FAQs">FAQs</Nav.Link>
             <Nav.Link className="fs-4 navLinks" href="#Team">Team</Nav.Link>
+            <Nav.Link className="fs-4 navLinks" href="#Contact_Us">Contact Us</Nav.Link>
           </Nav>
           <Nav>
             <div className="d-flex flex-row">

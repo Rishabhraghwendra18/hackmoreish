@@ -7,6 +7,7 @@ import Sponsors from "../sections/Sponsors";
 import Schedule from "../sections/Schedule";
 import Faqs from "../sections/Faqs";
 import Team from "../sections/Team";
+import ContactForm from "../sections/ContactForm";
 
 export async function getStaticProps() {
   const query = `{
@@ -103,6 +104,7 @@ export default function Home({ content, prizes, faqs, goldSponsors, silverSponso
         <Sponsors goldSponsors={goldSponsors} silverSponsors={silverSponsors} level4Sponsors={level4Sponsors}></Sponsors>
         <Faqs faqs={faqs}></Faqs>
         <Team></Team>
+        <ContactForm></ContactForm>
       </div>
     </>
   );
