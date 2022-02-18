@@ -11,6 +11,7 @@ export default function ContactForm() {
             target={"_blank"}
             style={{
               marginLeft: "0.2vw",
+              "word-wrap": "break-word",
             }}
           >
             18hack11moreish21@gmail.com
