@@ -1,5 +1,6 @@
 .image {
-      width: 20vw;
+    height: 100px;
+    object-fit: cover;
 }
 .grid_container{
       display: grid;
