@@ -68,6 +68,14 @@ export async function getStaticProps() {
       sponsorWebsiteLink
     }
   }
+  communitySponsorCollection{
+    items{
+      logo{
+        url
+      }
+      link
+    }
+  }
   }`;
   const response = await fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.SPACE_ID}/environments/master`,
@@ -88,11 +96,12 @@ export async function getStaticProps() {
       goldSponsors: response.data.goldSponsorsCollection.items,
       silverSponsors: response.data.silverSponsorsCollection.items,
       level4Sponsors: response.data.level4SponsorCollection.items,
+      communitySponsors: response.data.communitySponsorCollection.items,
     },
   };
 }
 
-export default function Home({ content, prizes, faqs, goldSponsors, silverSponsors,level4Sponsors}) {
+export default function Home({ content, prizes, faqs, goldSponsors, silverSponsors,level4Sponsors,communitySponsors}) {
   return (
     <>
       <div className={styles.container}>
@@ -101,7 +110,9 @@ export default function Home({ content, prizes, faqs, goldSponsors, silverSponso
         <Prizes prizes={prizes}></Prizes>
         <Theme content={content}></Theme>
         <Schedule></Schedule>
-        <Sponsors goldSponsors={goldSponsors} silverSponsors={silverSponsors} level4Sponsors={level4Sponsors}></Sponsors>
+        <Sponsors goldSponsors={goldSponsors} silverSponsors={silverSponsors} level4Sponsors={level4Sponsors}
+        communitySponsors={communitySponsors}
+        ></Sponsors>
         <Faqs faqs={faqs}></Faqs>
         <Team></Team>
         <ContactForm></ContactForm>
